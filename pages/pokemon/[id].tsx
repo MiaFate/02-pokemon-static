@@ -29,7 +29,7 @@ const PokemonPage: NextPage<Props> = ({ pokemon }) => {
                 <Grid xs={12} sm={8}>
                     <Card>
                         <Card.Header css={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                            <Text h1>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</Text>
+                            <Text h1 transform='capitalize'>{pokemon.name}</Text>
                             <Button color='gradient'
                                 ghost
                             >
