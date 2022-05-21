@@ -7,6 +7,8 @@ interface LayoutProps {
     children: JSX.Element;
 }
 
+const origin = (typeof window === 'undefined' ? '' : window.location.origin);
+
 export const Layout: FC<LayoutProps> = ({ children, title }) => {
     return (
         <>
@@ -15,6 +17,10 @@ export const Layout: FC<LayoutProps> = ({ children, title }) => {
                 <meta name="author" content="Mia Ramos" />
                 <meta name="description" content={`Informacion sobre Pokemon ${title}`} />
                 <meta name="keywords" content={`${title}, pokemon, pokedex`} />
+                {/* og metatags */}
+                <meta property="og:title" content={`Informacion sobre ${title}`} />
+                <meta property="og:description" content={`Esta es la pagina sobre ${title}`} />
+                <meta property="og:image" content={`${origin}/img/banner.png`} />
             </Head>
 
             <Navbar />
