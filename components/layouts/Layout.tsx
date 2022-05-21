@@ -13,7 +13,7 @@ export const Layout: FC<LayoutProps> = ({ children, title }) => {
             <Head>
                 <title>{title || 'Pokemon App'}</title>
                 <meta name="author" content="Mia Ramos" />
-                <meta name="description" content={`Informacion sobre el Pokemon ${title}`} />
+                <meta name="description" content={`Informacion sobre Pokemon ${title}`} />
                 <meta name="keywords" content={`${title}, pokemon, pokedex`} />
             </Head>
 
