@@ -14,7 +14,6 @@ export const FavoritePokemons: FC<Props> = ({ pokemons }) => {
                     <FavoriteCardPokemon pokemonId={id} key={id} />
                 ))
             }
-
         </Grid.Container>
     )
 }

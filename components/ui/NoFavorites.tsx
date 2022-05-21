@@ -1,5 +1,4 @@
 import { Container, Image, Text } from '@nextui-org/react'
-import React from 'react'
 
 export const NoFavorites = () => {
     return (
@@ -11,7 +10,7 @@ export const NoFavorites = () => {
             justifyContent: 'center',
             alignSelf: 'center'
         }}>
-            <Text h1>You haven&apos;t favorites</Text>
+            <Text h1>You haven&apos;t added any favorites</Text>
             <Image
                 src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/132.svg"
                 alt='pokemon ditto'

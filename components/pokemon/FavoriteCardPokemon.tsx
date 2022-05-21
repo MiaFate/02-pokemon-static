@@ -1,5 +1,5 @@
-import { Grid, Card } from "@nextui-org/react"
 import { FC } from "react";
+import { Grid, Card } from "@nextui-org/react"
 
 interface Props {
     pokemonId: number;

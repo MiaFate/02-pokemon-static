@@ -1,4 +1,3 @@
-import { Card, Grid } from "@nextui-org/react";
 import { useEffect, useState } from "react";
 import { Layout } from "../../components/layouts"
 import { FavoritePokemons } from "../../components/pokemon";
@@ -17,12 +16,10 @@ const FavoritesPage = () => {
     return (
         <Layout title="Favorites">
             {
-
                 favoritePokemons.length === 0
                     ? (<NoFavorites />)
                     : (<FavoritePokemons pokemons={favoritePokemons} />)
             }
-
         </Layout>
     )
 };
